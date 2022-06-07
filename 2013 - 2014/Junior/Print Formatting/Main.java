@@ -1,5 +1,14 @@
+/* Author - Connor Wu
+ * Date - 6/5/2022
+ * Description - acsl print formatting junior division solution
+ */
+
+import java.text.*;
 import java.io.*;
 
+/*
+ * acsl print formatting junior division solution
+ */
 public class Main {
   
     public static String processDefault(String s, String val) {
@@ -81,7 +90,8 @@ public class Main {
         BufferedReader reader = new BufferedReader(new FileReader("Test.in"));
         String input;
         while ((input = reader.readLine()) != null) {
-          System.out.printf("%s\n\n", findMethod(input.substring(0, input.indexOf(", ")), input.substring(input.indexOf(", ")+2)));
+          System.out.printf("Input: %s\n", input);
+          System.out.printf("Output: %s\n\n", findMethod(input.substring(0, input.indexOf(", ")), input.substring(input.indexOf(", ")+2)));
         }
         reader.close();
       } catch(IOException e) {
