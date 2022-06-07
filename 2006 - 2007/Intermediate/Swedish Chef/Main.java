@@ -21,16 +21,16 @@ class Main {
       .replaceAll("W", "V");
   }
   public static void main(String[] args) {
-     try {
-        BufferedReader reader = new BufferedReader(new FileReader("Test.in"));
-        String input;
-        while ((input = reader.readLine()) != null) {
-          System.out.printf("Input: %s\n", input);
-          System.out.printf("Output: %s\n\n", getResult(input));
-        }
-        reader.close();
-      } catch(IOException e) {
-        System.out.println(e.getMessage());
+    try {
+      BufferedReader reader = new BufferedReader(new FileReader("Test.in"));
+      String input;
+      while ((input = reader.readLine()) != null) {
+        System.out.printf("Input: %s\n", input);
+        System.out.printf("Output: %s\n\n", getResult(input));
       }
+      reader.close();
+    } catch(IOException e) {
+      System.out.println(e.getMessage());
+    }
   }
 }
