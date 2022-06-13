@@ -13,6 +13,7 @@ class Main {
       .replaceAll("o", "U")
       .replaceAll("ir", "UR")
       .replaceAll("tion", "SHUN")
+      // (?<=\s[^i]+)i regex, only works on .net and python (re package)
       .replaceFirst("(?!\\bi)i", "EE")
       // .replaceFirst("(?<!^)i", "EE")
       .replaceAll("en\\b", "EE")
